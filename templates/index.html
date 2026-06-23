@@ -1,1 +1,102 @@
-<h1>Welcome to the home page</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Prediction</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:'Poppins',sans-serif;
+        }
+
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(
+                135deg,
+                #0f172a,
+                #1e293b,
+                #2563eb,
+                #06b6d4
+            );
+            background-size:400% 400%;
+            animation:gradient 12s ease infinite;
+        }
+
+        @keyframes gradient{
+            0%{background-position:0% 50%;}
+            50%{background-position:100% 50%;}
+            100%{background-position:0% 50%;}
+        }
+
+        .container{
+            text-align:center;
+            padding:50px;
+            width:700px;
+
+            background:rgba(255,255,255,0.1);
+            backdrop-filter:blur(15px);
+
+            border-radius:25px;
+
+            box-shadow:
+            0 25px 50px rgba(0,0,0,0.3);
+
+            color:white;
+        }
+
+        h1{
+            font-size:3rem;
+            margin-bottom:20px;
+        }
+
+        p{
+            font-size:1.2rem;
+            color:#e2e8f0;
+            margin-bottom:30px;
+        }
+
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+
+            padding:14px 30px;
+
+            border-radius:12px;
+
+            background:#3b82f6;
+            color:white;
+
+            font-weight:600;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            transform:translateY(-3px);
+            box-shadow:0 10px 25px rgba(59,130,246,.5);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🎓 Student Performance Predictor</h1>
+
+        <p>
+            Predict student mathematics scores using Machine Learning,
+            data preprocessing, feature engineering, and model deployment.
+        </p>
+
+        <a href="/predictdata" class="btn">
+            Start Prediction
+        </a>
+    </div>
+
+</body>
+</html>
