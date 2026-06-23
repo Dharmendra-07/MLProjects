@@ -225,7 +225,7 @@ artifacts/model.pkl
 
 Aspiring Data Scientist & Machine Learning Engineer
 
-GitHub:  [oai_citation:0‡github.com](https://github.com/justdk06?utm_source=chatgpt.com)
+GitHub:  [https://github.com/Dharmendra-07](https://github.com/Dharmendra-07)
 
 ---
 
