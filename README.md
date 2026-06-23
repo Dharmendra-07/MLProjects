@@ -49,42 +49,43 @@ The trained model is deployed using Flask and provides predictions through a use
 ---
 
 ## 📂 Project Structure
-
-MLProjects/
-
-├── artifacts/
-│ ├── data.csv
-│ ├── train.csv
-│ ├── test.csv
-│ ├── model.pkl
-│ └── preprocessor.pkl
+📦 MLProjects
 │
-├── notebook/
+├── 📁 artifacts/                     # Trained model artifacts
+│   ├── 📄 data.csv
+│   ├── 📄 train.csv
+│   ├── 📄 test.csv
+│   ├── 📄 model.pkl                  # Best trained ML model
+│   └── 📄 preprocessor.pkl           # Data preprocessing pipeline
 │
-├── src/
-│ ├── components/
-│ │ ├── data_ingestion.py
-│ │ ├── data_transformation.py
-│ │ └── model_trainer.py
-│ │
-│ ├── pipeline/
-│ │ ├── predict_pipeline.py
-│ │ └── train_pipeline.py
-│ │
-│ ├── exception.py
-│ ├── logger.py
-│ └── utils.py
+├── 📁 notebook/                      # Jupyter notebooks and experiments
 │
-├── templates/
-│ ├── index.html
-│ └── home.html
+├── 📁 src/
+│   │
+│   ├── 📁 components/                # ML pipeline components
+│   │   ├── 📄 data_ingestion.py
+│   │   ├── 📄 data_transformation.py
+│   │   └── 📄 model_trainer.py
+│   │
+│   ├── 📁 pipeline/                  # Training & prediction pipelines
+│   │   ├── 📄 train_pipeline.py
+│   │   └── 📄 predict_pipeline.py
+│   │
+│   ├── 📄 exception.py               # Custom exception handling
+│   ├── 📄 logger.py                  # Logging configuration
+│   └── 📄 utils.py                   # Utility functions
 │
-├── app.py
-├── application.py
-├── requirements.txt
-├── setup.py
-└── README.md
-
+├── 📁 templates/                     # Flask HTML templates
+│   ├── 📄 index.html                 # Landing page
+│   └── 📄 home.html                  # Prediction page
+│
+├── 📄 app.py                         # Flask application entry point
+├── 📄 application.py                 # AWS Elastic Beanstalk entry point
+├── 📄 requirements.txt               # Project dependencies
+├── 📄 setup.py                       # Package configuration
+├── 📄 README.md                      # Project documentation
+│
+└── 📁 logs/                          # Application logs (generated)
 ---
 
 ## 📊 Dataset Features
