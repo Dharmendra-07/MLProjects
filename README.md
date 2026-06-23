@@ -53,67 +53,36 @@ The trained model is deployed using Flask and provides predictions through a use
 MLProjects/
 
 ├── artifacts/
-
 │ ├── data.csv
-
 │ ├── train.csv
-
 │ ├── test.csv
-
 │ ├── model.pkl
-
 │ └── preprocessor.pkl
-
 │
-
 ├── notebook/
-
 │
-
 ├── src/
-
 │ ├── components/
-
 │ │ ├── data_ingestion.py
-
 │ │ ├── data_transformation.py
-
 │ │ └── model_trainer.py
-
 │ │
-
 │ ├── pipeline/
-
 │ │ ├── predict_pipeline.py
-
 │ │ └── train_pipeline.py
-
 │ │
-
 │ ├── exception.py
-
 │ ├── logger.py
-
 │ └── utils.py
-
 │
-
 ├── templates/
-
 │ ├── index.html
-
 │ └── home.html
-
 │
-
 ├── app.py
-
 ├── application.py
-
 ├── requirements.txt
-
 ├── setup.py
-
 └── README.md
 
 ---
