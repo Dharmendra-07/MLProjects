@@ -20,45 +20,45 @@ with st.form("prediction_form"):
 
     gender = st.selectbox(
         "Gender",
-        ["male", "female"]
+        ["Male", "Female"]
     )
 
     ethnicity = st.selectbox(
         "Race/Ethnicity",
         [
-            "group A",
-            "group B",
-            "group C",
-            "group D",
-            "group E"
+            "Group A",
+            "Group B",
+            "Group C",
+            "Group D",
+            "Group E"
         ]
     )
 
     parental_level_of_education = st.selectbox(
         "Parental Level of Education",
         [
-            "some high school",
-            "high school",
-            "some college",
-            "associate's degree",
-            "bachelor's degree",
-            "master's degree"
+            "Some high school",
+            "High school",
+            "Some college",
+            "Associate's degree",
+            "Bachelor's degree",
+            "Master's degree"
         ]
     )
 
     lunch = st.selectbox(
         "Lunch",
         [
-            "standard",
-            "free/reduced"
+            "Standard",
+            "Free/reduced"
         ]
     )
 
     test_preparation_course = st.selectbox(
         "Test Preparation Course",
         [
-            "none",
-            "completed"
+            "None",
+            "Completed"
         ]
     )
 
