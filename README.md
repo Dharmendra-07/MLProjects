@@ -204,16 +204,14 @@ https://mlprojects-toy9uq6ngfedc5kzymjsbi.streamlit.app/
 Example:
 
 ```text
-images/home.png
-images/prediction.png
+images/home-page
 ```
 
 Then display them:
 
 ```markdown
-![Home Page](images/home.png)
+![Home Page](images/home-page.png)
 
-![Prediction Page](images/prediction.png)
 ```
 
 ---
