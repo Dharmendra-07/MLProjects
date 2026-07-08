@@ -20,7 +20,7 @@ with st.form("prediction_form"):
 
     gender = st.selectbox(
         "Gender",
-        ["Male", "Female"]
+        ["male", "female"]
     )
 
     ethnicity = st.selectbox(
