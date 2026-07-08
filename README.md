@@ -209,10 +209,7 @@ images/home-page
 
 Then display them:
 
-```markdown
 ![Home Page](images/home-page.png)
-
-```
 
 ---
 
