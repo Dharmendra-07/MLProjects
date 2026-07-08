@@ -1,12 +1,112 @@
 # 🎓 Student Performance Prediction
 
-A Machine Learning web application built using **Python**, **Flask**, and **Scikit-Learn** that predicts a student's Mathematics score based on demographic and academic factors.
+A Machine Learning web application built with **Python**, **Scikit-learn**, and **Streamlit** that predicts a student's mathematics score based on demographic, educational, and personal attributes.
+
+## 🌐 Live Demo
+
+**🚀 Streamlit App:** https://mlprojects-toy9uq6ngfedc5kzymjsbi.streamlit.app/
 
 ---
 
-## 🚀 Project Overview
+# 📌 Project Overview
 
-This project uses Machine Learning algorithms to predict student performance in Mathematics using the following inputs:
+Student Performance Prediction is an End-to-End Machine Learning project that demonstrates the complete ML lifecycle, including:
+
+- Data Ingestion
+- Data Transformation
+- Feature Engineering
+- Model Training
+- Model Evaluation
+- Model Serialization
+- Model Deployment using Streamlit
+
+The application predicts a student's mathematics score based on several input features such as gender, parental education, lunch type, test preparation course, reading score, and writing score.
+
+---
+
+# 🚀 Features
+
+- 📊 Real-time Mathematics Score Prediction
+- 🎨 Interactive Streamlit User Interface
+- ⚡ Fast and Lightweight
+- 🤖 End-to-End Machine Learning Pipeline
+- 📦 Serialized Model & Preprocessor
+- ☁️ Deployed on Streamlit Community Cloud
+
+---
+
+# 🛠️ Tech Stack
+
+## Programming Language
+
+- Python
+
+## Machine Learning
+
+- Scikit-learn
+- CatBoost
+- XGBoost
+- NumPy
+- Pandas
+- SciPy
+
+## Web Framework
+
+- Streamlit
+
+## Model Serialization
+
+- Joblib
+- Dill
+
+## Development Tools
+
+- Git
+- GitHub
+- VS Code
+
+---
+
+# 📂 Project Structure
+
+```text
+MLProjects/
+│
+├── artifacts/
+│   ├── model.pkl
+│   ├── preprocessor.pkl
+│   ├── train.csv
+│   ├── test.csv
+│   └── data.csv
+│
+├── notebooks/
+│
+├── src/
+│   ├── components/
+│   │   ├── data_ingestion.py
+│   │   ├── data_transformation.py
+│   │   └── model_trainer.py
+│   │
+│   ├── pipeline/
+│   │   ├── train_pipeline.py
+│   │   └── predict_pipeline.py
+│   │
+│   ├── exception.py
+│   ├── logger.py
+│   └── utils.py
+│
+├── streamlit_app.py
+├── requirements.txt
+├── setup.py
+├── README.md
+└── artifacts/
+```
+
+---
+
+# 📊 Input Features
+
+The model takes the following inputs:
 
 - Gender
 - Race/Ethnicity
@@ -16,219 +116,157 @@ This project uses Machine Learning algorithms to predict student performance in 
 - Reading Score
 - Writing Score
 
-The trained model is deployed using Flask and provides predictions through a user-friendly web interface.
+---
+
+# 🎯 Output
+
+The application predicts the student's:
+
+- **Mathematics Score**
 
 ---
 
-## 🛠️ Tech Stack
+# ⚙️ Installation
 
-### Backend
-- Python
-- Flask
-- Scikit-Learn
-- Pandas
-- NumPy
-
-### Machine Learning
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-- XGBoost Regressor
-- CatBoost Regressor
-
-### Frontend
-- HTML5
-- CSS3
-- Bootstrap
-
-### Deployment
-- AWS Elastic Beanstalk
-- GitHub
-
----
-
-## 📂 Project Structure
-
-```text
-📦 MLProjects
-│
-├── 📁 artifacts/                     # Trained model artifacts
-│   ├── 📄 data.csv
-│   ├── 📄 train.csv
-│   ├── 📄 test.csv
-│   ├── 📄 model.pkl                  # Best trained ML model
-│   └── 📄 preprocessor.pkl           # Data preprocessing pipeline
-│
-├── 📁 notebook/                      # Jupyter notebooks and experiments
-│
-├── 📁 src/
-│   │
-│   ├── 📁 components/                # ML pipeline components
-│   │   ├── 📄 data_ingestion.py
-│   │   ├── 📄 data_transformation.py
-│   │   └── 📄 model_trainer.py
-│   │
-│   ├── 📁 pipeline/                  # Training & prediction pipelines
-│   │   ├── 📄 train_pipeline.py
-│   │   └── 📄 predict_pipeline.py
-│   │
-│   ├── 📄 exception.py               # Custom exception handling
-│   ├── 📄 logger.py                  # Logging configuration
-│   └── 📄 utils.py                   # Utility functions
-│
-├── 📁 templates/                     # Flask HTML templates
-│   ├── 📄 index.html                 # Landing page
-│   └── 📄 home.html                  # Prediction page
-│
-├── 📄 app.py                         # Flask application entry point
-├── 📄 application.py                 # AWS Elastic Beanstalk entry point
-├── 📄 requirements.txt               # Project dependencies
-├── 📄 setup.py                       # Package configuration
-├── 📄 README.md                      # Project documentation
-│
-└── 📁 logs/                          # Application logs (generated)
-```
-
----
-
-## 📊 Dataset Features
-
-### Input Features
-
-| Feature | Description |
-|----------|-------------|
-| Gender | Male/Female |
-| Race/Ethnicity | Group A-E |
-| Parental Education | Parent Education Level |
-| Lunch | Standard / Free-Reduced |
-| Test Preparation | Completed / None |
-| Reading Score | Score out of 100 |
-| Writing Score | Score out of 100 |
-
-### Target Variable
-
-- Mathematics Score
-
----
-
-## ⚙️ Installation
-
-### Clone Repository
+## 1. Clone the Repository
 
 ```bash
-git clone https://github.com/Dharmendra-07/MLProjects.git
+git clone https://github.com/YOUR_GITHUB_USERNAME/MLProjects.git
+```
 
+## 2. Navigate to the Project Directory
+
+```bash
 cd MLProjects
 ```
 
-### Create Virtual Environment
+## 3. Create a Virtual Environment
 
 ```bash
 python -m venv venv
 ```
 
-### Activate Virtual Environment
+## 4. Activate the Virtual Environment
 
-#### macOS / Linux
-
-```bash
-source venv/bin/activate
-```
-
-#### Windows
+### Windows
 
 ```bash
 venv\Scripts\activate
 ```
 
-### Install Dependencies
+### macOS/Linux
+
+```bash
+source venv/bin/activate
+```
+
+## 5. Install Dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
----
-
-## ▶️ Run Application
+## 6. Run the Application
 
 ```bash
-python app.py
-```
-
-Application will start on:
-
-```text
-http://localhost:5000
+streamlit run streamlit_app.py
 ```
 
 ---
 
-## 🧠 Machine Learning Pipeline
+# 🌍 Live Deployment
 
-1. Data Ingestion
-2. Data Validation
-3. Data Transformation
+The project is deployed on **Streamlit Community Cloud**.
+
+🔗 **Live Demo:**
+
+https://mlprojects-toy9uq6ngfedc5kzymjsbi.streamlit.app/
+
+---
+
+# 📈 Machine Learning Workflow
+
+1. Data Collection
+2. Data Ingestion
+3. Data Preprocessing
 4. Feature Engineering
 5. Model Training
 6. Model Evaluation
-7. Model Selection
-8. Model Serialization
-9. Prediction Pipeline
-10. Flask Deployment
+7. Model Serialization
+8. Streamlit Deployment
 
 ---
 
-## 📈 Models Evaluated
+# 📸 Application Screenshot
 
-- Linear Regression
-- Decision Tree Regressor
-- Random Forest Regressor
-- Gradient Boosting Regressor
-- XGBoost Regressor
-- CatBoost Regressor
+> Add screenshots inside an `images/` folder.
 
-The best-performing model is automatically selected and saved as:
+Example:
 
 ```text
-artifacts/model.pkl
+images/home.png
+images/prediction.png
+```
+
+Then display them:
+
+```markdown
+![Home Page](images/home.png)
+
+![Prediction Page](images/prediction.png)
 ```
 
 ---
 
-## 📷 Application Screens
-
-### Home Page
-- Modern Landing Page
-- User-friendly Navigation
-
-### Prediction Page
-- Student Information Form
-- Real-time Maths Score Prediction
-
----
-
-## 🔥 Future Enhancements
+# 🔮 Future Improvements
 
 - User Authentication
-- Prediction History Tracking
-- REST API Support
-- Docker Containerization
+- Prediction History
+- Database Integration
+- REST API using Flask/FastAPI
+- Docker Support
 - CI/CD Pipeline
-- Cloud Deployment
+- AWS/Azure/GCP Deployment
+- Explainable AI (SHAP)
 
 ---
 
-## 👨‍💻 Author
+# 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork this repository.
+2. Create a new feature branch.
+3. Commit your changes.
+4. Push the branch.
+5. Open a Pull Request.
+
+---
+
+# 📄 License
+
+This project is licensed under the **MIT License**.
+
+---
+
+# 👨‍💻 Author
 
 **Dharmendra Kumar**
 
-Aspiring Data Scientist & Machine Learning Engineer
+GitHub: https://github.com/YOUR_GITHUB_USERNAME
 
-GitHub:  [https://github.com/Dharmendra-07](https://github.com/Dharmendra-07)
+LinkedIn: https://www.linkedin.com/in/YOUR_LINKEDIN_PROFILE
 
 ---
 
-## ⭐ Support
+## ⭐ If you like this project
 
-If you found this project useful, please consider giving it a ⭐ on GitHub.
+Please consider giving this repository a **Star ⭐** on GitHub.
+
+It helps others discover the project and motivates future improvements.
+
+---
+
+## 🙏 Thank You
+
+Thank you for visiting this repository! Feel free to explore the project, provide feedback, or contribute to its development.
