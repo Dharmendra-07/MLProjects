@@ -199,14 +199,6 @@ https://mlprojects-toy9uq6ngfedc5kzymjsbi.streamlit.app/
 
 # 📸 Application Screenshot
 
-> Add screenshots inside an `images/` folder.
-
-Example:
-
-```text
-images/home-page
-```
-
 Then display them:
 
 ![Home Page](images/home-page.png)
